@@ -1,6 +1,16 @@
-export default function handler(req, res) {
+export default async function handler(req, res) {
   res.status(200).json({
-    name: "Swastica",
-    number: "917502189959"
+    success: true,
+    message: "API is working",
+    data: [
+      {
+        Number: "917502189959",
+        Name: "Swastica"
+      },
+      {
+        Number: "917042255531",
+        Name: "Nishant"
+      }
+    ]
   });
 }
